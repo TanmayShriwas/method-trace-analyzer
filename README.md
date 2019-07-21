@@ -37,6 +37,10 @@ Team Members Roles
 1.	Tanmay shriwas:- Development, Xtrace, log generation,loganalysis.
 2.	Roopali Mishra:-  debugging, gui(window builder),testing.
 3.	Simranjeetsingh saluja:- Searching and testing.
+
+
+
+
 Workflow Of The Entire Project
 Setting up all software and technologies used in the project 
 1.	Open J9 VM and Xtrace
