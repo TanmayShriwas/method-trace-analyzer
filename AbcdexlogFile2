@@ -1,0 +1,60 @@
+                Trace Summary
+
+Service Level :
+        JRE 12 Windows 10 amd64-64 (build 12.0.1+12)
+
+JVM Start-up Params :
+-Xoptionsfile=C:\methodtracer\jdk-12.0.1.12-openj9\lib\options.default
+-Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple
+-Xjcl:jclse29
+-Dcom.ibm.oti.vm.bootstrap.library.path=C:\methodtracer\jdk-12.0.1.12-openj9\bin\compressedrefs;C:\methodtracer\jdk-12.0.1.12-openj9\bin
+-Dsun.boot.library.path=C:\methodtracer\jdk-12.0.1.12-openj9\bin\compressedrefs;C:\methodtracer\jdk-12.0.1.12-openj9\bin
+-Djava.library.path=C:\methodtracer\jdk-12.0.1.12-openj9\bin\compressedrefs;C:\methodtracer\jdk-12.0.1.12-openj9\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jre-12.0.1.12-openj9\bin;C:\Program Files\AdoptOpenJDK\jdk-12.0.1.12-openj9\bin;c:\windows\system32;c:\programdata\oracle\java\javapath;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\nvidia corporation\physx\common;c:\program files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\WINDOWS\system32\windowspowershell\v1.0\;c:\program files (x86)\bin;c:\program files (x86)\microsoft sql server\110\tools\binn\managementstudio\;c:\program files (x86)\microsoft sql server\110\tools\binn\;c:\program files\microsoft sql server\110\tools\binn\;c:\program files (x86)\microsoft sql server\110\dts\binn\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\110\dts\binn\;c:\program files (x86)\brackets\command;C:\WINDOWS\system32\openssh\;c:\program files\putty\;c:\program files\ibm\gsk8\lib64;c:\program files (x86)\ibm\gsk8\lib;F:\IBM\db2\BIN;F:\IBM\db2\FUNCTION;F:\IBM\db2\SAMPLES\REPL;C:\Program Files\nodejs\;C:\Users\tanmay\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\tanmay\AppData\Local\Programs\Python\Python36-32\;C:\Users\tanmay\AppData\Local\Microsoft\WindowsApps;C:\Users\tanmay\AppData\Roaming\npm;.
+-Djava.home=C:\methodtracer\jdk-12.0.1.12-openj9
+-Duser.dir=C:\methodtracer\jdk-12.0.1.12-openj9
+-Djava.class.path=.;F:\IBM\db2\java\db2java.zip;F:\IBM\db2\java\db2jcc.jar;F:\IBM\db2\java\sqlj.zip;F:\IBM\db2\java\db2jcc_license_cu.jar;F:\IBM\db2\bin;F:\IBM\db2\java\common.jar;C:\Users\tanmay\eclipse-workspace\MTA\src\ibmcodes;
+-Xtrace:none
+-Xtrace:methods=Abcdex,trigger=method{Abcdex,jstacktrace},maximal=mt,output=AbcdexTrace2.trc
+-Dsun.java.command=Abcdex
+-Dsun.java.launcher=SUN_STANDARD
+
+
+Activation Info :
+        FORMAT=C:\methodtracer\jdk-12.0.1.12-openj9\lib;.
+        MAXIMAL=all{level1}
+        EXCEPTION=j9mm{gclogger}
+        MAXIMAL=all{level2}
+        none
+        methods=Abcdex
+        trigger={method{Abcdex,jstacktrace}}
+        maximal=mt
+        output=AbcdexTrace2.trc
+
+Sys Processor Info :
+        Arch family AMD64
+        Processor Sub-type Opteron
+        Num Processors 4
+        Big Endian false
+        Word size 64
+        Using Trace Counter J9 timer
+
+Active Threads :
+        0x16700  main
+
+JVM started      : 07:36:05.836000000
+
+Last buffer write: 07:36:06.598182949
+
+First tracepoint:  07:36:06.525616748
+
+Last tracepoint :  07:36:06.598182195
+
+
+                Trace Formatted Data 
+
+J9 timer(UTC)        ThreadID               TP id     Type        TraceEntry 
+07:36:06.525625424            *0x16700         mt.3    Entry      >Abcdex.main([Ljava/lang/String;)V bytecode static method
+07:36:06.525630705             0x16700  j9trc_aux.0    Event       jstacktrace:
+07:36:06.525654470             0x16700  j9trc_aux.1    Event       [1] Abcdex.main (Abcdex.java:5)
+07:36:06.531072048             0x16700         mt.25   Exit      *<Abcdex.main([Ljava/lang/String;)V bytecode static method, exception thrown
+07:36:06.598182195             0x16700         dg.262  Debug       ***** Thread termination - trace purged *****
